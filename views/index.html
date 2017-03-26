@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-group">
+                <%
+                 movies.forEach(function(movie){%>
+                    <li class="list-group-item">
+                        <a href="<%=movie.url%>"><%=movie.name%></a>
+                    </li>
+                <%})
+                %>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
